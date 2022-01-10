@@ -1,0 +1,248 @@
+
+/* PERSONALIZAÇÃO SITE */
+body {/* imagem de fundo */
+    padding: 0;
+    margin: 0px;
+    background-image: url(../imagens/fundo.jpg); 
+}
+
+* {/* fonte */
+    font-family: candara;
+}
+
+/* cor do link */
+a.link{color:white;}
+a.link:hover{color:#FFD700}
+a.link{text-decoration: none}
+a.link2{color: black;}
+a.link2:hover{color:#C42A22}
+a.link2{text-decoration: none}
+
+/* letras transparentes */
+.transparente{
+    color: transparent;
+}
+
+
+/* CABECALHO */
+#cabeçalho{
+    background-image: url(../imagens/fundo1.png);
+    width:100%;
+}
+#cabeçalho1{
+    margin-top: -1cm;
+    background: transparent;
+}
+#cabeçalho2{
+    border: transparent;
+    background: transparent;
+}
+.op1{
+    background: transparent;
+    color: transparent;
+    display: inline-block;
+    text-align: center;
+}
+.op{
+    text-decoration:none;
+    border: 2px solid #F5FFFA;
+    background-color: #C42A22;
+    width: 3.5cm;
+    height: 1cm;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-top: 0.4cm;
+    margin-left: 13px;
+    margin-top: 5px;
+  
+}
+
+/* RODAPE */
+#rodape{
+    background-color: #C42A22;
+    color: white;
+    font-size: 2em;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+}
+.ifsulLogo{
+    margin-left: 4cm;
+    display: inline-block;
+    background-repeat: no-repeat; 
+}
+.paragrafo{
+    padding-left: 1.5cm;
+}
+
+
+/* PAGINA INDEX */
+#personalizaçao{
+    display: inline-block;
+    background: repeat;
+}
+.imagem {
+    width: 100%;
+}
+#cantinaIF{
+    font-family: candara;
+    background-color: #C42A22;
+    color: white; 
+    text-align: justify;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    font-size: 19px;
+    line-height: 30px;
+    padding-bottom: 1cm;
+}
+#quadradinhos{
+    background-image: url(../imagens/fundo.jpg);
+}
+.quad1{
+    border: blue;
+    width: 100%;
+}
+
+
+/* PAGINA LANCHES */
+#cardapio{
+    text-align: left; 
+    padding-left:1cm;
+    font-size: 120%;
+    font-size: 18px;
+}
+.divs{
+    padding-top: 1cm;
+    margin-bottom: 1cm;
+    border: 3px;
+    border-style: solid;
+    border-color: #C42A22;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.titulo{
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+#divdoces{
+    display: none;  
+}
+#divbebidas{
+    display: none;
+}
+#divlanches{
+    display: none;
+}
+.linha{
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #C42A22;
+}
+
+
+/* PAGINA LOGIN */
+#login {
+    color: white;
+}
+.telaLogin{
+    margin-top: 2cm;
+    margin-bottom: 1cm;
+    color: white;
+    padding: 1cm;
+    padding-top: 0cm;
+    background: #C42A22;
+    border: 1px;
+    border-radius: 30px;
+    border: #C42A22
+}
+#linkCad{
+    text-align: right;
+}
+#botaoLogin{
+   height: 1.1cm;
+   width: 2.2cm;
+   background: #FFD700;
+   border: transparent;
+   font-size: 20px;
+}
+.tam{
+    width: 5cm;
+    height: 0.9cm;
+    font-size: small;
+}
+
+
+/* PAGINA CADASTRO */
+input{
+    border-radius: 11px;
+}
+#cadastro1{
+   height: 1.25cm;
+   width: 2.5cm;
+   background: #FFD700;
+   border-color: transparent;
+}
+input:valid{
+    border: 2px solid  forestgreen;
+}
+#conteudo2{
+    text-align: left; 
+    padding-left:1cm;
+    font-size: 20px;
+    font-style: italic;
+}
+.telaCadastro{
+    font-size: large;
+    color: white;
+    padding: 2cm;
+    padding-top: 1cm;
+    align-items: center;
+    background: #C42A22;
+    border: 1px;
+    border-radius: 30px;
+    border: #C42A22
+}
+
+/* PAGINA DIVIDAS */
+#conteudo3{
+    text-align: left; 
+    padding-left:1cm;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+/* PAGINA DESENVOLVEDORES */
+#conteudo4{
+    font-size: 120%;
+    text-align: center;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+.imagemDes{
+    display: inline-block;
+    vertical-align: top;  
+    border-width: 5px;
+    border-style: dotted;
+    border-color: #C42A22;
+    padding: 1cm;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    border-radius: 11px;
+}
+.yc{
+    border-radius: 8px;
+}
+#figureyasmin,#figurecarol{
+    display: none;
+}
+
+
+
