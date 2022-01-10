@@ -1,0 +1,170 @@
+
+<html>
+    <head>
+        <title>lanches</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/removendoestilos.css">
+        <link rel="stylesheet" href="css/normalização.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+        <link rel="stylesheet" href="css/css.css">
+        <script src="JavaScript/javascript.js"></script>
+
+    </head>
+
+
+    <body>
+        <script>
+            /* teste para saber qual div é para deixar aberta de acordo com a opção que a pessoa selecionou na pagina index, mas não deu certo*/
+            if (teste == "lanches") {
+                alert("foi lanches");
+                document.getElementById("divlanches").style.display = "block";
+                document.getElementById("divbebidas").style.display = "none";
+                document.getElementById("divdoces").style.display = "none";
+            } else if (teste === "bebidas") {
+                document.getElementById("divlanches").style.display = "none";
+                document.getElementById("divbebidas").style.display = "block";
+                document.getElementById("divdoces").style.display = "none";
+            } else if (teste === "doces") {
+                document.getElementById("divlanches").style.display = "none";
+                document.getElementById("divbebidas").style.display = "none";
+                document.getElementById("divdoces").style.display = "block";
+            } else {
+                document.getElementById("divlanches").style.display = "none";
+                document.getElementById("divbebidas").style.display = "none";
+                document.getElementById("divdoces").style.display = "none";
+                alert("foi outro");
+            }
+        </script>
+
+        <!-- CABEÇALHO -->
+        <div class="row" id="cabeçalho">
+            <div class="col seis" id="cabeçalho1">
+                <p> teste </p>
+                <img src="imagens/logo1.png">
+            </div>
+            <div class="col seis" id="cabeçalho2">
+                <br/>
+                <nav>
+                    <br/>  <!-- Links para navegar para outras páginas -->
+                    <section class="op" id="idnome"> <a class="link" 
+                                                        href="index.html" 
+                                                        onmousemove="mudaCorBorda1('idnome')" 
+                                                        onmouseout="mudaCorBorda2('idnome')"
+                                                        >IR PARA HOME</a> </section>
+                    <section class="op" id="idlanche"> <a class="link" 
+                                                          href="lanches.html" 
+                                                          onmousemove="mudaCorBorda1('idlanche')"
+                                                          onmouseout="mudaCorBorda2('idlanche')"
+                                                          >LANCHES</a> </section>
+                    <section class="op" id="idlogin"> <a class="link" 
+                                                         href="login.html" 
+                                                         onmousemove="mudaCorBorda1('idlogin')"
+                                                         onmouseout="mudaCorBorda2('idlogin')"
+                                                         >REALIZAR LOGIN</a> </section>
+
+                </nav>
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- CONTEÚDO DO SITE -->
+        <div class="row" id="cardapio">
+            <div class="col quatro">
+                <p class="transparente"> teste </p>
+            </div>
+            <div class="col quatro">
+                <!-- Lista de lanches,bebidas e doces (cardápio) -->
+                <br/> <br/> <br/>
+                <div class="row divs" id="bordaLanches">
+                    <div class="col doze" >
+                        <h3 class="titulo"  style="color: #C42A22"><u id="titulolanches"
+                                                                      onmousemove="mudaCorLetra1('titulolanches'); mudaCorBorda1('bordaLanches')" 
+                                                                      onmouseout="mudaCorLetra2('titulolanches');
+                                                                              mudaCorBorda3('bordaLanches')"
+                                                                      onclick="mostrar('divlanches')" 
+                                                                      >LANCHES DISPONÍVEIS NA CANTINA</u></h3> <br/> 
+                    </div>
+                    <div class="row">
+                        <div class="col doze" id="divlanches" >
+
+                            <h4 class="linha">Pastéis assados (carne, frango, calabresa) - R$5,50 <br/></h4>
+                            <h4 class="linha">Pastel assado de chocolate - R$5,00 <br/></h4>
+                            <h4 class="linha">Cachorro quente frango - R$12,00 <br/></h4>
+                            <h4 class="linha">Cachorro quente calabresa - R$12,00 <br/></h4>
+                            <h4 class="linha">Hambúrguer - R$8,50 <br/></h4>
+                            <h4 class="linha">Mini pizza - R$5,00 <br/></h4>
+                            <h4 class="linha">Empadinha - R$3,80 <br/></h4>
+                            <h4 class="linha">Enrolado assado - R$4,00 <br/></h4>
+                            <h4 class="linha">Sanduíche Natural - R$7,00 <br/></h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row divs" id="bordabebidas">
+                    <div class="col doze">
+                        <h3  class="titulo" style="color: #C42A22"><u id="titulobebidas"
+                                                                      onmousemove="mudaCorLetra1('titulobebidas'); mudaCorBorda1('bordabebidas')" 
+                                                                      onmouseout="mudaCorLetra2('titulobebidas'); mudaCorBorda3('bordabebidas')"
+                                                                      onclick="mostrar('divbebidas')">BEBIDAS DISPONÍVEIS NA CANTINA</u></h3> <br/>
+                    </div>
+                    <div class="row">
+                        <div class="col doze" id="divbebidas">
+
+                            <h4 class="linha">Agua com ou sem gás - R$2,75 <br/></h4>
+                            <h4 class="linha">Sucos naturais - R$4,50 <br/></h4>
+                            <h4 class="linha">Refrigerante lata- R$4,50 <br/></h4>
+                            <h4 class="linha">Refrigerante litro - R$12,00 <br/></h4>
+                            <h4 class="linha">Café - R$3,50 <br/></h4>
+                            <h4 class="linha">Capuccino - R$4,00 <br/></h4>
+                            <h4 class="linha"> Café com leite - R$3,50 <br/></h4>
+                            <h4 class="linha"> Todinho - R$3,50 <br/></h4>
+                            <h4 class="linha"> Suco de caixinha 200ml - R$3,50 <br/></h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row divs" id="bordadoces">
+                    <div class="col doze">
+                        <h3  class="titulo" style="color: #C42A22"><u id="titulodoces"
+                                                                      onmousemove="mudaCorLetra1('titulodoces');
+                                                                              mudaCorBorda1('bordadoces')" 
+                                                                      onmouseout="mudaCorLetra2('titulodoces'); mudaCorBorda3('bordadoces')"
+                                                                      onclick="mostrar('divdoces')">DOCES DISPONÍVEIS NA CANTINA</u></h3> <br/>
+                    </div>
+                    <div class="row">
+                        <div class="col doze" id="divdoces">
+                            <h4 class="linha">Kit Kat - R$2,59 <br/></h4>
+                            <h4 class="linha">Sensação - R$2,59 <br/> </h4>
+                            <h4 class="linha">Pé de moça - R$2,50 <br/></h4>
+                            <h4 class="linha">Talento - R$5,99  <br/></h4>
+                            <h4 class="linha">Biscoito recheado - R$1,99 <br/></h4>
+                            <h4 class="linha"> M&M - R$9,99 <br/></h4>
+                            <h4 class="linha"> BIS Extra - R$2,99 <br/></h4>
+                            <h4 class="linha"> Snickers - R$6,00<br/></h4>
+                            <h4 class="linha">Batom - R$1,49 <br/></h4>
+                            <h4 class="linha"> Lancy - R$2,49 <br/></h4>
+                            <h4 class="linha"> Kinder Chocolate - R$7,49 <br/></h4>
+                            <h4 class="linha"> Bom Bom Amor Carioca - R$1,20 <br/></h4>
+                            <h4 class="linha"> Bom Bom Sonho de valsa - R$1,30 <br/></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col quatro">
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- RODAPÉ-->
+        <div class="row" >
+            <footer id="rodape" class="col doze"> 
+                <h3 class="paragrafo">Cantina Ifsul Campus Camaquã</h3> <br/>
+                <h4 class="paragrafo">-------Desenvolvido por Yasmin e Caroline-------</h4> <br/>
+                <a class="link" href="desenvolvedores.html"> <h4 class="paragrafo">Mais Informações</h4> </a>  
+            </footer>
+        </div>
+    </body>
+</html>

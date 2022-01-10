@@ -1,0 +1,108 @@
+
+<html>
+    <head>
+        <title>desenvolvedores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/removendoestilos.css">
+        <link rel="stylesheet" href="css/normalização.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+        <link rel="stylesheet" href="css/css.css">
+        <script src="JavaScript/javascript.js"></script>
+    </head>
+
+    <body>
+
+        <!-- CABEÇALHO -->
+        <div class="row" id="cabeçalho">
+            <div class="col seis" id="cabeçalho1">
+                <p class="transparente"> teste </p>
+                <img src="imagens/logo1.png">
+            </div>
+            <div class="col seis" id="cabeçalho2">
+                <br/>
+                <nav>
+                    <br/>  <!-- Links para navegar para outras páginas -->
+                    <section class="op" id="idnome"> <a class="link" 
+                                                        href="index.html" 
+                                                        onmousemove="mudaCorBorda1('idnome')" 
+                                                        onmouseout="mudaCorBorda2('idnome')"
+                                                        >IR PARA HOME</a> </section>
+                    <section class="op" id="idlanche"> <a class="link" 
+                                                          href="lanches.html" 
+                                                          onmousemove="mudaCorBorda1('idlanche')"
+                                                          onmouseout="mudaCorBorda2('idlanche')"
+                                                          >LANCHES</a> </section>
+                    <section class="op" id="idlogin"> <a class="link" 
+                                                         href="login.html" 
+                                                         onmousemove="mudaCorBorda1('idlogin')"
+                                                         onmouseout="mudaCorBorda2('idlogin')"
+                                                         >REALIZAR LOGIN</a> </section>
+                </nav>
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- CONTEÚDO DO SITE -->
+        <div class="row" id="conteudo4">
+            <div class="col um">
+                <p class="transparente"> teste </p>
+            </div>
+            <div class="col dez">
+                <br/>  
+                <h1 style="color: #C42A22">SITE DESENVOLVIDO POR:</h1>
+                <br/> <br/> <br/> <br/>
+                <h1 id="nomeyasmin" 
+                    style="color: black; cursor: pointer;" 
+                    onclick="mostrar('figureyasmin')" 
+                    onmouseout="CorLetra('nomeyasmin')"
+                    onmouseover="CorLetra2('nomeyasmin')">YASMIN: </h1> <br/> <br/>
+                <!-- imagem desenvolvedora yasmin -->
+                <figure class="imagemDes">
+                    <img class="yc" src="imagens/yasmin.jpg" width="150" height="150">
+                    <figcaption>
+                        <section id="figureyasmin">
+                            <h2 style="padding-top: 1cm">Nome Completo: Yasmin Souza Camargo </h2>
+                            <h5>Curso: Técnico em informática</h5> 
+                            <h5>E-mail: yasmincamargo012@gmail.com</h5> 
+                        </section>
+                    </figcaption>
+                </figure>
+                <br/> <br/>
+                <br/> <br/>
+                <!-- imagem desenvolvedora caroline -->
+                <br/> <br/>
+                <h1 id="nomecarol" 
+                    style="color: black; cursor: pointer;" 
+                    onclick="mostrar('figurecarol')" 
+                    onmouseout="CorLetra('nomecarol')"
+                    onmouseover="CorLetra2('nomecarol')">CAROLINE: </h1> <br/> <br/>
+                <figure class="imagemDes">
+                    <img class="yc"  src="imagens/caroline.jpg" width="150" height="150">
+                    <figcaption> 
+                        <section id="figurecarol">
+                            <h5 style="padding-top: 1cm">Nome Completo: Caroline Souza Camargo </h5> 
+                            <h5>Curso: Técnico em informática</h5> 
+                            <h5>E-mail: carolinecamargo012@gmail.com</h5>
+                        </section>
+                    </figcaption>
+                </figure>
+                <br/> <br/> <br/> <br/> <br/> 
+            </div>
+            <div class="col um">
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- RODAPÉ-->
+        <div class="row" >
+            <footer id="rodape" class="col doze"> 
+                <h3 class="paragrafo">Cantina Ifsul Campus Camaquã</h3> <br/>
+                <h4 class="paragrafo">-------Desenvolvido por Yasmin e Caroline-------</h4> <br/>
+                <a class="link" href="desenvolvedores.html"> <h4 class="paragrafo">Mais Informações</h4> </a>  
+            </footer>
+        </div>
+    </body>
+</html>

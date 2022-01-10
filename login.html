@@ -1,0 +1,105 @@
+
+<html>
+    <head>
+        <title>login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/removendoestilos.css">
+        <link rel="stylesheet" href="css/normalização.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+        <link rel="stylesheet" href="css/css.css">
+        <script src="JavaScript/javascript.js"> </script>
+    </head>
+
+    <body>
+        <!-- CABEÇALHO -->
+        <div class="row" id="cabeçalho">
+            <div class="col seis" id="cabeçalho1">
+                <p> teste </p>
+                <img src="imagens/logo1.png">
+            </div>
+            <div class="col seis" id="cabeçalho2">
+                <br/>
+                <nav>
+                    <br/>  <!-- Links para navegar para outras páginas -->
+                    <section class="op" id="idnome"> <a class="link" 
+                                                        href="index.html" 
+                                                        onmousemove="mudaCorBorda1('idnome')" 
+                                                        onmouseout="mudaCorBorda2('idnome')"
+                                                        >IR PARA HOME</a> </section>
+                    <section class="op" id="idlanche"> <a class="link" 
+                                                          href="lanches.html" 
+                                                          onmousemove="mudaCorBorda1('idlanche')"
+                                                          onmouseout="mudaCorBorda2('idlanche')"
+                                                          >LANCHES</a> </section>
+                    <section class="op" id="idlogin"> <a class="link" 
+                                                         href="login.html" 
+                                                         onmousemove="mudaCorBorda1('idlogin')"
+                                                         onmouseout="mudaCorBorda2('idlogin')"
+                                                         >REALIZAR LOGIN</a> </section>
+                </nav>
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- CONTEÚDO DO SITE -->
+        <!-- Espaço para o usuário realizar login -->
+        <div class="row" id="conteudo">
+            <div class="col quatro">
+                <p class="transparente"> teste </p>
+            </div>
+            <div class="col quatro telaLogin" >
+                <br/> <br/> <br/>  <br/> <br/> 
+                <!-- entrar com o nome -->
+                <form id="login" action="dividas.html" method="get">
+                    <h1 style="text-align: center"> FAÇA SEU LOGIN NO CANTINA IF </h1>
+                    <br/> <br/>
+                    <label for="nomelogin" style="font-size: 20px; font: bold "> Nome: </label> <br/> <br/> 
+                    <input class="tam" id="nomelogin"
+                           placeholder="  Fulano"
+                           type="text"
+                           name="nome"
+                           required />
+                    <br/> <br/> <br/> <br/>
+                    <!-- entrar com a senha -->
+                    <label for="senhalogin" style="font-size: 20px; font: bold;"> Senha: </label> <br/> <br/>
+                    <input class="tam" id="senhalogin"
+                           placeholder="  XXXXXXXX"
+                           type="password"
+                           name="senha"
+                           required />
+                    <br/> <br/> 
+                    <!-- enviar dados -->
+                    <br/><br/> <input id="botaoLogin" 
+                                      type="submit" 
+                                      name="Entrar" 
+                                      onclick="nometeste()" 
+                                      onmouseout="mudaCorBotao1('botaoLogin')" 
+                                      onmouseover="mudaCorBotao2('botaoLogin')" 
+                                      />
+                    <br/> <br/> <br/> <br/>
+                </form>
+                <nav> 
+                    <br/>
+                    <!-- link para a página cadastro -->
+                    <a id="linkCad" class="link" href="cadastro.html" style="font-size: 20px"> <h4>Realizar cadastro</h4> </a>
+                </nav>
+                <br/>  
+            </div>
+            <div class="col quatro">
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- RODAPÉ-->
+        <div class="row" >
+            <footer id="rodape" class="col doze"> 
+                <h3 class="paragrafo">Cantina Ifsul Campus Camaquã</h3> <br/>
+                <h4 class="paragrafo">-------Desenvolvido por Yasmin e Caroline-------</h4> <br/>
+                <a class="link" href="desenvolvedores.html"> <h4 class="paragrafo">Mais Informações</h4> </a>  
+            </footer>
+        </div>
+    </body>
+</html>

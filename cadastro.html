@@ -1,0 +1,136 @@
+
+<html>
+    <head>
+        <title>cadastros</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/removendoestilos.css">
+        <link rel="stylesheet" href="css/normalização.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+        <link rel="stylesheet" href="css/css.css">
+        <script src="JavaScript/javascript.js"> </script>
+    </head>
+
+    <body>
+         
+        <!-- CABEÇALHO -->
+        <div class="row" id="cabeçalho">
+            <div class="col seis" id="cabeçalho1">
+                <p> teste </p>
+                <img src="imagens/logo1.png">
+            </div>
+            <div class="col seis" id="cabeçalho2">
+                <br/>
+                <nav>
+                    <br/>  <!-- Links para navegar para outras páginas -->
+                    <section class="op" id="idnome"> <a class="link" 
+                                                        href="index.html" 
+                                                        onmousemove="mudaCorBorda1('idnome')" 
+                                                        onmouseout="mudaCorBorda2('idnome')"
+                                                        >IR PARA HOME</a> </section>
+                    <section class="op" id="idlanche"> <a class="link" 
+                                                          href="lanches.html" 
+                                                          onmousemove="mudaCorBorda1('idlanche')"
+                                                          onmouseout="mudaCorBorda2('idlanche')"
+                                                          >LANCHES</a> </section>
+                    <section class="op" id="idlogin"> <a class="link" 
+                                                         href="login.html" 
+                                                         onmousemove="mudaCorBorda1('idlogin')"
+                                                         onmouseout="mudaCorBorda2('idlogin')"
+                                                         >REALIZAR LOGIN</a> </section>
+                </nav>
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- CONTEÚDO DO SITE -->
+        <div class="row" id="conteudo2">
+            <br/> <br/> <br/>
+            <div class="col quatro">
+                <p class="transparente"> teste </p>
+            </div>
+            <div class="col quatro ">
+                <!-- entradas nome, idade, email, telefone, senha -->
+                <form class="telaCadastro" 
+                      id="cadastro" 
+                      action="dividas.html" 
+                      method="get"  style="font-size: 20px" 
+                      onsubmit="return testeSenha()">
+                    <h2 style="text-align: center"> FAÇA SEU CADASTRO NO CANTINA IF </h2>
+                     <br/> <br/>
+                    <label for="nome"> Qual o seu nome?* </label> <br/> 
+                    <input id="nome"
+                           placeholder="Fulano"
+                           type="text"
+                           name="nome"
+                           maxlength="20"
+                           required
+                           />
+                    <br/> <br/> <br/>
+                    <label for="idade"> Qual a sua idade? </label> <br/> 
+                    <input type="number" 
+                           min="10" 
+                           max="100" 
+                           step="1" 
+                           value="18" />
+                    <br/> <br/> <br/>
+                    <label for="email"> Qual o seu email?* </label> <br/> 
+                    <input id="email"
+                           placeholder="fulano@gmail.com"
+                           type="email"
+                           name="email"
+                           required />
+                    <br/> <br/> <br/>
+                    <label for="telefone"> Digite seu telefone para contato </label> <br/> 
+                    <input id="telefone"
+                           placeholder="51999999999"
+                           maxlength="11"
+                           type="tel"
+                           name="telefone" />
+                    <br/> <br/> <br/>
+                    <label for="senha"> Digite uma senha de 8 caracteres* </label> <br/> 
+                    <input id="senha1"
+                           placeholder="xxxxxxxx"
+                           type="password"
+                           name="senha"
+                           maxlength="8"
+                           required />
+                    <br/> <br/> <br/>
+                    <label for="senha"> Confirme sua senha* </label> <br/> 
+                    <input id="senha2"
+                           placeholder="xxxxxxxx"
+                           type="password"
+                           name="senha"
+                           maxlength="8"
+                           required />
+                    <br/> <br/> <br/>
+                    <!-- enviar dados -->
+                    <input id="cadastro1" 
+                           type="submit" 
+                           name="Realizar Cadastro"  
+                           onclick="nometeste()"
+                           onmouseout="mudaCorBotao1('cadastro1')"
+                           onmouseover="mudaCorBotao2('cadastro1')"
+                           /> 
+                        
+                </form>
+                <br/> <br/> <br/>
+            </div>
+            <div class="col quatro">
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- RODAPÉ-->
+        <div class="row" >
+            <footer id="rodape" class="col doze"> 
+                <h3 class="paragrafo">Cantina Ifsul Campus Camaquã</h3> <br/>
+                <h4 class="paragrafo">-------Desenvolvido por Yasmin e Caroline-------</h4> <br/>
+                <a class="link" href="desenvolvedores.html"> <h4 class="paragrafo">Mais Informações</h4> </a>  
+            </footer>
+            
+        </div>
+    </body>
+</html>

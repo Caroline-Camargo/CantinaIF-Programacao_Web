@@ -1,0 +1,139 @@
+
+<html>
+    <head>  
+        <title>Home</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/removendoestilos.css">
+        <link rel="stylesheet" href="css/normalização.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+        <link rel="stylesheet" href="css/css.css">
+        <script src="JavaScript/javascript.js"></script>
+    </head>
+
+    <body>
+
+        <!-- CABEÇALHO -->
+        <div class="row" id="cabeçalho">
+            <div class="col seis" id="cabeçalho1">
+                <p> teste </p>
+                <img src="imagens/logo1.png" >
+            </div>
+            <div class="col seis" id="cabeçalho2">
+                <br/>
+                <nav>
+                    <br/>  <!-- Links para navegar para outras páginas -->
+                    <section class="op" id="idnome"> <a class="link" 
+                                                        href="index.html" 
+                                                        onmousemove="mudaCorBorda1('idnome')" 
+                                                        onmouseout="mudaCorBorda2('idnome')"
+                                                        >IR PARA HOME</a> </section>
+                    <section class="op" id="idlanche"> <a class="link" 
+                                                          href="lanches.html" 
+                                                          onmousemove="mudaCorBorda1('idlanche')"
+                                                          onmouseout="mudaCorBorda2('idlanche')"
+                                                          >LANCHES</a> </section>
+                    <section class="op" id="idlogin"> <a class="link" 
+                                                         href="login.html" 
+                                                         onmousemove="mudaCorBorda1('idlogin')"
+                                                         onmouseout="mudaCorBorda2('idlogin')"
+                                                         >REALIZAR LOGIN</a> </section>
+                   
+                </nav>
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- CONTEÚDO DO SITE -->
+        <!-- banner para realizar login -->
+        <div class="row"id="personalizaçao">
+            <div class="col doze" id="personalizaçao">
+                <a class="link" href="login.html"> <img src="imagens/aa.png" class="imagem"> </a>
+            </div>
+        </div>
+
+
+        <!-- Descrição do cantina IF-->
+        <div class="row" id="cantinaIF">
+            <br/> <br/>
+            <h3> O QUE É O CANTINAIF: </h3> <br/> 
+            <h4>
+                O CantinaIF é um site realizado para a utilização na Cantina do IFSul Câmpus Camaquã. 
+                Dentre os principais recursos estão a disponibilização de um cardapio dos lanches disponíveis 
+                e uma página de login para que os usuários possam ver suas dívidas pendentes com a Cantina. 
+                O site visa ter uma relação mais próxima com os alunos do Câmpus e utilizar a tecnologia para 
+                oferecer um serviço mais completo para os estudantes, uma vez que a lista de lanches pode ser 
+                acessada de qualquer lugar. Foi desenvolvido em uma linguagem de marcação HTML e para a estilização 
+                foi utilizado o CSS. O mesmo foi desenvolvido em sala de aula como parte da avaliação da disciplina 
+                de programação do quarto ano do curso Técnico em informática no Instituto Federal Sul Riograndense 
+                Câmpus Camaquã. 
+            </h4> 
+            <br/> <br/>
+        </div>
+
+
+        <!-- Imagens de lanches com link direcionável-->
+        <div class="row" id="quadradinhos">
+            <div class="row">
+                <section class="col um transparente">teste</section>
+                <section class="col quatro quad1"> 
+                    <a class="link" href="lanches.html"> 
+                        <img id="Img1"src="imagens/lanches.jpeg" 
+                             class="imagem" 
+                             onmousemove="trocaImg('acesse.png', 'Img1')" 
+                             onmouseout="trocaImg('lanches.jpeg', 'Img1')" 
+                             onclick="saberOclick('divlanches')">
+                    </a> 
+                </section>
+
+                <section class="col dois transparente" >teste</section>
+
+                <section class="col quatro quad1"> 
+                    <a class="link" href="lanches.html"> 
+                        <img id="Img2"src="imagens/doces.jpeg" 
+                             class="imagem" 
+                             onmousemove="trocaImg('acesse.png', 'Img2')" 
+                             onmouseout="trocaImg('doces.jpeg', 'Img2')" 
+                             onclick="saberOclick('divdoces')"> 
+                    </a> 
+                </section>
+                <section class="col um transparente" >teste</section>
+            </div>
+
+
+            <div class="row">
+                <section class="col um transparente" >teste</section>
+                <section class="col quatro quad1" >
+                    <a class="link" href="lanches.html"> 
+                        <img id="Img3" src="imagens/bebidas.jpeg" 
+                             class="imagem" onmousemove="trocaImg('acesse.png', 'Img3')" 
+                             onmouseout="trocaImg('bebidas.jpeg', 'Img3')" 
+                             onclick="saberOclick('divbebidas')"> 
+                    </a> 
+                </section>
+
+                <section class="col dois transparente" >teste</section>
+
+                <section class="col quatro quad1" > 
+                    <a class="link" href="desenvolvedores.html">
+                        <img id="Img4"  src="imagens/desenvolvedores.jpeg" 
+                             class="imagem" onmousemove="trocaImg('acesse.png', 'Img4')" 
+                             onmouseout="trocaImg('desenvolvedores.jpeg', 'Img4')">
+                    </a>
+                </section>
+                <section class="col um transparente" >teste</section>
+            </div>
+        </div>
+
+
+        <!-- RODAPÉ-->
+        <div class="row" >
+            <footer id="rodape" class="col doze" > 
+                <h3 class="paragrafo">Cantina Ifsul Campus Camaquã</h3> <br/>
+                <h4 class="paragrafo">-------Desenvolvido por Yasmin e Caroline-------</h4> <br/>
+                <a class="link" href="desenvolvedores.html"> <h4 class="paragrafo">Mais Informações</h4> </a>  
+            </footer>
+        </div>
+    </body>
+</html>

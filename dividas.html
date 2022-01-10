@@ -1,0 +1,85 @@
+
+<html>
+    <head>
+        <title>DIVIDAS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/removendoestilos.css">
+        <link rel="stylesheet" href="css/normalização.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+        <link rel="stylesheet" href="css/css.css">
+        <script src="JavaScript/javascript.js"> </script>
+    </head>
+
+    <body>
+        <!-- CABEÇALHO -->
+        <div class="row" id="cabeçalho">
+            <div class="col seis" id="cabeçalho1">
+                <p> teste </p>
+                <img src="imagens/logo1.png">
+            </div>
+            <div class="col seis" id="cabeçalho2">
+                <br/>
+                <nav>
+                    <br/>  <!-- Links para navegar para outras páginas -->
+                    <section class="op" id="idnome"> <a class="link" 
+                                                        href="index.html" 
+                                                        onmousemove="mudaCorBorda1('idnome')" 
+                                                        onmouseout="mudaCorBorda2('idnome')"
+                                                        >IR PARA HOME</a> </section>
+                    <section class="op" id="idlanche"> <a class="link" 
+                                                          href="lanches.html" 
+                                                          onmousemove="mudaCorBorda1('idlanche')"
+                                                          onmouseout="mudaCorBorda2('idlanche')"
+                                                          >LANCHES</a> </section>
+                    <section class="op" id="idlogin"> <a class="link" 
+                                                         href="login.html" 
+                                                         onmousemove="mudaCorBorda1('idlogin')"
+                                                         onmouseout="mudaCorBorda2('idlogin')"
+                                                         >REALIZAR LOGIN</a> </section>
+                </nav>
+                <p class="transparente"> teste </p>
+            </div>
+        </div>
+
+
+        <!-- CONTEÚDO DO SITE -->
+        <div class="row" id="conteudo3" style="font-size: 18px">
+            <div class="col um">
+                <p class="transparente"> teste </p>
+            </div>
+            <div class="col onze">
+                <!-- espaço para colocar as dividas (EXEMPLO) -->
+                <br/> <br/> <br/>
+                <h3>STATUS DE DIVIDAS PENDENTES COM A CANTINA:</h3> <br/>
+                <ul>
+                    <li>Pastel assado de chocolate - R$5,00</li>
+                    <li>Refrigerante lata- R$4,50</li>
+                    <li>Pé de moça - R$2,50</li>
+                </ul> <br/> <br/>
+                <h5>Pagar até dia: 00</h5>
+                <h5>-----------------------------------------------------------------------------------------------</h5> <br/>
+                <!-- espaço para usuario enviar uma sugestão opiniao para a cantina -->
+                <form id="sugestão" method="get">
+                    <label for="texto"> Enviar Mensagem Para a Cantina:</label> <br/>
+                    <textarea name="Inserir mensagem" rows="4" cols="46"> </textarea>
+                    <input type="reset" name="Apagar"/>
+                    <input type="submit" name="Enviar" onclick="mensagemenviada()"/>
+                    <br/> <br/> <br/> <br/> 
+                </form> 
+            </div>
+        </div>
+
+
+        <!-- RODAPÉ-->
+        <div class="row" >
+            <footer id="rodape" class="col doze"> 
+                <h3 class="paragrafo">Cantina Ifsul Campus Camaquã</h3> <br/>
+                <h4 class="paragrafo">-------Desenvolvido por Yasmin e Caroline-------</h4> <br/>
+                <a class="link" href="desenvolvedores.html"> <h4 class="paragrafo">Mais Informações</h4> </a>  
+                <section class="ifsulLogo" > <a class="link" href="desenvolvedores.html"> </a> </section>
+            </footer>
+            
+        </div>
+    </body>
+</html>
